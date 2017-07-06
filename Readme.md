@@ -45,8 +45,7 @@ Alternatively, the database host can be defined through usage of the `PG_`
 environment variables:
 
 ```
-$> docker run --link db_container:pg \
-              -e AWS_REGION=eu-central-1 \
+$> docker run -e AWS_REGION=eu-central-1 \
               -e AWS_ACCESS_KEY_ID=12345 \
               -e AWS_SECRET_ACCESS_KEY=qwertz \
               -e PG_HOST=db.example.com \
