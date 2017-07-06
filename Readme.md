@@ -18,6 +18,7 @@ expected:
 * `PG_HOST` (optional, default `pg`)
 * `PG_PORT` (optional, default `5432`)
 * `PG_USER` (optional, default `postgres`)
+* `PG_PASS` (optional, no default value)
 * `AWS_REGION`
 * `AWS_ACCESS_KEY`
 * `AWS_SECRET_ACCESS_KEY`
