@@ -15,7 +15,7 @@ through environment variables. This enables you to create your derivant of the
 image for your specific use case. The following environment variables are
 expected:
 
-* `PG_HOST` (optional, default `pg`)
+* `PG_HOST` (optional, default `db`)
 * `PG_PORT` (optional, default `5432`)
 * `PG_USER` (optional, default `postgres`)
 * `PG_PASS` (optional, no default value)
@@ -27,7 +27,7 @@ To run the backup for a locally deployed database, link the database
 container into the backup container:
 
 ```
-$> docker run --link db_container:pg \
+$> docker run --link db_container:db \
               -e AWS_REGION=eu-central-1 \
               -e AWS_ACCESS_KEY_ID=12345 \
               -e AWS_SECRET_ACCESS_KEY=qwertz \

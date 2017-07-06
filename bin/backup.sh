@@ -13,7 +13,7 @@ s3_path=$1
 db_name=$2
 
 # Set up default options
-PG_HOST="${PG_HOST:-pg}"
+PG_HOST="${PG_HOST:-db}"
 PG_PORT="${PG_PORT:-5432}"
 PG_USER="${PG_USER:-postgres}"
 
