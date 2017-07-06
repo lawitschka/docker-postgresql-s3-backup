@@ -30,6 +30,7 @@ $> docker run --link db_container:pg \
               -e AWS_REGION=eu-central-1 \
               -e AWS_ACCESS_KEY_ID=12345 \
               -e AWS_SECRET_ACCESS_KEY=qwertz \
+              lawitschka/postgresql-s3-backup \
               s3_bucket/path/in/bucket example_db
 ```
 
@@ -49,5 +50,6 @@ $> docker run --link db_container:pg \
               -e AWS_SECRET_ACCESS_KEY=qwertz \
               -e PG_HOST=db.example.com \
               -e PG_USER=nondefaultuser \
+              lawitschka/postgresql-s3-backup \
               s3_bucket/path/in/bucket example_db
 ```
