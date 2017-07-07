@@ -38,7 +38,7 @@ $> docker run --link db_container:db \
 This will dump the database `example_db` into an archive called
 `example_db-XXXXXXXXXX.sql.tar.gz`. The `XXXXXXXXXX` will be
 replaced with a UNIX epoch at the time of the backup. The backup script then
-uploads the archive to a S#3 bucket called `s3_bucket` and into the folder
+uploads the archive to a S3 bucket called `s3_bucket` and into the folder
 `path/in/bucket`.
 
 Alternatively, the database host can be defined through usage of the `PG_`
